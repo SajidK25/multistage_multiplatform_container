@@ -26,7 +26,7 @@ func main () {
 
 ## let’s write a Dockerfile to package the golang application :
 
-```
+```shell
 FROM ubuntu:latest
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
