@@ -58,7 +58,7 @@ docker images goapp
 
 We will divide our Dockerfile into two stages. One will be the build stage, which will help us to build our application and generate the artifact. And then we will only copy the artifact from the build stage to another stage and create a tiny production image.
 
-```
+```shell
 # Dockerfile.prod
 FROM ubuntu as builder
 ARG DEBIAN_FRONTEND=noninteractive
